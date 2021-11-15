@@ -1,0 +1,9 @@
+query NextCard {
+  cards(orderBy: REVIEW_AFTER_ASC) {
+    nodes {
+      id
+      question
+      answer
+    }
+  }
+}

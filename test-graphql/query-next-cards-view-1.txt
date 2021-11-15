@@ -1,0 +1,9 @@
+query NextCard {
+  nextCards(first: 1) {
+    nodes {
+      id
+      question
+      answer
+    }
+  }
+}

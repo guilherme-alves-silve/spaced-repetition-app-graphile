@@ -1,0 +1,1 @@
+DROP FUNCTION learn.handle_score(INTEGER, INTEGER);

@@ -1,0 +1,16 @@
+query CardQuery {
+	cards {
+		nodes {
+			id
+			question
+			answer
+			spacing
+			personId
+			person {
+				id
+				firstName
+				lastName
+			}
+		}
+	}
+}

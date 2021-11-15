@@ -1,0 +1,14 @@
+mutation ScoreResponse {
+	handleScore(input: {
+    cardId:1,
+    score: 3
+  }) {
+    card {
+      id
+      question
+      answer
+      spacing
+      seq
+    }
+  }
+}

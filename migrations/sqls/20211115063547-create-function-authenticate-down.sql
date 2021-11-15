@@ -1,0 +1,1 @@
+DROP FUNCTION learn.authenticate (TEXT, TEXT);

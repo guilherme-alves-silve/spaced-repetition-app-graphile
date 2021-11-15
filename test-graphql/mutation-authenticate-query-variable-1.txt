@@ -1,0 +1,15 @@
+mutation AuthenticatePerson($email: String!, $password: String!) {
+  authenticate(input:{
+    email: $email
+    password: $password
+  }) {
+    jwt
+  }
+}
+
+Query variable example below:
+
+{
+  "email": "bill@email.com",
+  "password": "secret_password"
+}

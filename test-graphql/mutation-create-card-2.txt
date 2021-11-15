@@ -1,0 +1,19 @@
+mutation CreateCard {
+  createCard(input: {
+    card: {
+      question: "How do you say hello in Spanish?"
+      answer: "Hola"
+    }
+  }) {
+    card {
+      id
+      question
+      answer
+      archived
+      reviewAfter
+      spacing
+      easeFactor
+      seq
+    }
+  }
+}

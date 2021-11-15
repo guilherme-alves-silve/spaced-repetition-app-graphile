@@ -1,0 +1,14 @@
+mutation CreatePerson {
+  createPerson(input: {
+    person:{
+      firstName: "Joe", 
+      lastName: "Smith" 
+    } 
+  }) {
+    person {
+      id
+      firstName
+      lastName
+    }
+  }
+}

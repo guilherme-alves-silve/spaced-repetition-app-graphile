@@ -1,0 +1,15 @@
+query NextCard {
+  nextCards(
+    first: 1
+    filter: {
+    	reviewAfter:{
+      	lessThanOrEqualTo:"2022-03-28 15:30:28.322300-07"
+    	}
+  }) {
+    nodes {
+      id
+      question
+      answer
+    }
+  }
+}

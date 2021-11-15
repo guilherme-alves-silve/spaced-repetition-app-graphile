@@ -1,0 +1,1 @@
+INSERT INTO learn.person(first_name, last_name) VALUES ('James', 'Moore'), ('Sim', 'City'), ('Harrison', 'Cole'), ('Hokuto', 'Shinken');

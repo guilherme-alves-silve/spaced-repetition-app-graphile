@@ -1,0 +1,14 @@
+mutation RegisterPerson {
+	registerPerson(input:{
+    firstName: "Bill"
+    lastName: "Curry"
+    email:"bill@email.com"
+    password:"secret_password"
+  }) {
+    person {
+      id
+      firstName
+      lastName
+    }
+  }
+}

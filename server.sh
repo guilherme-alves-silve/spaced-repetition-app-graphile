@@ -1,0 +1,11 @@
+npx postgraphile \
+	-c postgres://learn_postgraphile:secret_password@localhost:5432/learn_dev \
+	--schema learn \
+	--append-plugins @graphile-contrib/pg-simplify-inflector,postgraphile-plugin-connection-filter \
+	--enhance-graphiql \
+	--allow-explain \
+	--watch \
+	--owner-connection postgres://admin:admin@localhost:5432/learn_dev \
+	--default-role learn_anonymous \
+	--jwt-token-identifier learn.jwt \
+	--jwt-secret secret_for_jwts
